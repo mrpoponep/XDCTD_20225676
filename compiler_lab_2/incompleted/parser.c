@@ -1,8 +1,4 @@
-/* 
- * @copyright (c) 2008, Hedspi, Hanoi University of Technology
- * @author Huu-Duc Nguyen
- * @version 1.0
- */
+
 
 #include <stdlib.h>
 #include "reader.h"
@@ -101,7 +97,6 @@ void compileTypeDecls(void) {
 }
 
 void compileTypeDecl(void) {
-  // TypeDecl -> IDENT = Type ;
   eat(TK_IDENT);
   eat(SB_EQ);
   compileType();
